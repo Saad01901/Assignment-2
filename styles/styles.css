@@ -1,52 +1,331 @@
 /* nav-section */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.nav-cotainer{
-width: 1250px;
-display: flex;
-margin: 0 auto;
-height: 120px;
+
+.nav-cotainer {
+    width: 1250px;
+    display: flex;
+    margin: 0 auto;
+    height: 120px;
 }
-.nav-title{
+
+.nav-title {
     display: flex;
     align-items: center;
     width: 60%;
     color: #131318;
-font-family: Mulish;
-font-size: 36px;
-font-weight: 800;
-gap: 10px;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
+    gap: 10px;
 }
-.special-text{
+
+.fa-solid {
+    visibility: hidden;
+}
+
+.special-text {
     color: #FF5400;
-font-family: Mulish;
-font-size: 36px;
-font-weight: 800;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
     width: 40%;
     justify-content: space-between;
     align-items: center;
 
 }
+
 .nav-list a {
     text-decoration: none;
     align-items: center;
     color: #424247;
-text-align: center;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 700;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
 }
-.nav-list .special-text-a{
+
+.nav-list .special-text-a {
     color: #FF5400;
-text-align: center;
-font-family: Mulish;
-font-size: 18px;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+}
 
-font-weight: 700;
+/* banner section  */
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/Group\ 13\ \(1\)\ \(1\).png');
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    margin: 0 auto;
 
+}
+
+.banner-content {}
+
+.banner-heading {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.banner-para {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.banner-input {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-left: 200px;
+    margin-top: 64px;
+}
+
+.banner-input input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    border-color: none;
+    text-align: center;
+    border: #FFF;
+
+}
+
+.primary-btn {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: #FFF;
+}
+
+/* populer-section */
+.populer-section {
+    width: 1170px;
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.populer-section-text {
+    justify-content: space-between;
+    width: 50%;
+}
+
+.populer-section-heading {
+    color: #131318;
+
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.populer-section-para1 {
+
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.populer-section-list {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-weight: 400;
+
+}
+
+.populer-section-para2 {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+.Destination-section {
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.Destination-section-text h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.Destination-section-text p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.Destination-section-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .nav-cotainer {
+        width: 375px;
+        height: 70px;
+
+    }
+
+    .nav-cotainer img {
+        width: 28.724px;
+        height: 33.516px;
+        flex-shrink: 0;
+    }
+
+    .nav-cotainer h3 {
+        font-size: 20px;
+
+    }
+
+    .fa-solid {
+        visibility: visible;
+    }
+
+    .special-text {
+        font-size: 20px;
+    }
+
+    .fa-bars {
+        padding-left: 200px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .banner {
+        width: 335px;
+        height: 483px;
+        padding-left: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .banner-content {}
+
+    .banner-heading {
+        font-size: 22px;
+        padding: 30px;
+    }
+
+    .banner-para {
+        font-size: 14px;
+        padding-top: 0px;
+    }
+
+    .banner-input {
+        flex-direction: column;
+        margin-left: 50px;
+        margin-top: 20px;
+
+    }
+
+    .populer-section {
+        flex-direction: column;
+        margin-top: 24px;
+        width: 375px;
+        
+    }
+
+    .populer-section-text {
+        margin-left: 20px;
+
+    }
+
+    .populer-section-heading {
+        font-size: 20px;
+    }
+
+    .populer-section-para1 {
+        font-size: 14px;
+    }
+
+    .populer-section-list {
+        font-size: 14px;
+    }
+
+    .populer-section-para2 {
+        font-size: 14px;
+    }
+
+    .populer-section-img img {
+        width: 335px;
+        height: 342px;
+        margin-top: 37px;
+        margin-left: 24px;
+    }
+
+    .Destination-section {
+        width: 335px;
+    }
+
+    .Destination-section-text {
+        flex-direction: column;
+        margin: 0;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .Destination-section-img {
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .Destination-section-img img {
+        width: 335px;
+        height: 176px;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+    }
 }
